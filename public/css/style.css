@@ -1,0 +1,118 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+/* .new-listing-form{
+    height: 72vh;
+    text-align: center;
+} */
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+   z-index: 100;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222;
+}
+
+.f-info{
+    height: 6rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    
+}
+.f-info div{
+    text-align: center;
+}
+.f-info-social i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+    margin-right: 0.5rem;
+
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+
+/* card styling */
+.listing-card{
+    border: none;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover;
+}
+.card-body{
+    padding: 0;
+    margin: 0;
+}
+.card-text p{
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none;
+}
+.listing-link:hover .card-img-overlay{
+    opacity: 0.2;
+}
+.card-img-overlay{
+    background-color: white;
+    opacity: 0;
+}
+
+/* new .ejs */
+.add-btn{
+    border: none;
+    background-color: #fe424d;
+}
+/* edit.ejs */
+.edit-btn{
+    border: none;
+    background-color: #fe424d;
+}
+.cancel-btn{
+    border: none;
+    background-color: rgb(203, 122, 24);
+}
+
+
+/* show.ejs */
+.show-img{
+    height: 15rem;
+    object-fit: cover;
+}
+.show-btn{
+    border: none;
+    background-color: #fe424d;
+}
+.show-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* -------------------map--------------------- */
+#map { 
+    width: 40vw;
+    height: 350px;
+ }

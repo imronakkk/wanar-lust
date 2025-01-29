@@ -1,0 +1,53 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+
+            <fieldset>
+                <legend>New Listings:</legend>
+                <form method="post" action="/listings/new" class="needs-validation" novalidate enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">title:</label>
+                        <input type="text" id="title" name="title" placeholder="title" required class="form-control" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">description:</label>
+                        <input id="description" type="text" name="description" class="form-control"  placeholder="decription">
+                        
+                    </div>
+                    <!-- <div class="mb-3">
+                        <label for="image" class="form-label">image:</label>
+                        <input type="text" name="image" placeholder="imageurl"class="form-control"  >
+                    </div> -->
+                    <div class="mb-3">
+                        <label for="image" class="form-label">image:</label>
+                        <input type="file" name="image" placeholder="imageurl"class="form-control" required >
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="price" class="form-label">price:</label>
+                            <input type="text" name="price" class="form-control" placeholder="price" required>
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label for="location" class="form-label">location:</label>
+                            <input type="text" name="location" placeholder="location" class="form-control" >
+                        </div>
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label for="country" class="form-label">country:</label>
+                        <input type="text" name="country" placeholder="country" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        
+                        <button class="btn btn-dark add-btn">list</button>
+                    </div>
+            </form>
+        </fieldset>
+       </div>
+    </div>
+    
+</body>
